@@ -1,0 +1,18 @@
+﻿Analyzing taqikrdnawa...                                        
+
+   info - The private field _isLoading could be 'final' - lib\backend\providers\app_notifications_provider.dart:30:8 - prefer_final_fields
+   info - The import of 'package:flutter/material.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/foundation.dart' - lib\backend\providers\profile_provider.dart:8:8 - unnecessary_import
+   info - The import of 'package:flutter/foundation.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\backend\providers\theme_provider.dart:1:8 - unnecessary_import
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\checkout_screen.dart:158:54 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\checkout_screen.dart:167:46 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\checkout_screen.dart:170:54 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\profile_screen.dart:183:56 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\profile_screen.dart:261:23 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\profile_screen.dart:295:25 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\profile_screen.dart:298:40 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\profile_screen.dart:308:21 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\profile_screen.dart:339:25 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\profile_screen.dart:342:40 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\frontend\screens\profile_screen.dart:352:21 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - refactor_imports.dart:46:3 - avoid_print
+

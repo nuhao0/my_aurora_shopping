@@ -1,0 +1,14 @@
+{
+  "name": "taqikrdnawa-functions",
+  "description": "Sends real email (SendGrid) and optional FCM when an order is created.",
+  "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^5.1.1"
+  },
+  "private": true
+}

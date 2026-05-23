@@ -1,0 +1,51 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isUser(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    // Store catalog (Publicly readable, open write for Seeding)
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if true; 
+    }
+
+    match /categories/{categoryId} {
+      allow read: if true;
+      allow write: if true; // REQUIRED for development seeding
+    }
+
+    match /users/{uid} {
+      allow read, update, delete: if isUser(uid);
+      allow create: if isUser(uid);
+
+      match /favorites/{favId} {
+        allow read, write: if isUser(uid);
+      }
+
+      match /cart/{cartId} {
+        allow read, write: if isUser(uid);
+      }
+
+      match /orders/{orderId} {
+        allow read, write: if isUser(uid);
+      }
+
+      match /notifications/{notifId} {
+        allow read, write: if isUser(uid);
+      }
+
+      // Written only by Cloud Functions (Admin SDK). Client can read own copy.
+      match /email_inbox/{messageId} {
+        allow read: if isUser(uid);
+        allow write: if false;
+      }
+    }
+  }
+}
