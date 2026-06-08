@@ -1,27 +1,65 @@
-# taqikrdnawa
+1)project title  Aurora
 
-A new Flutter project.
+Aurora is a premium cross-platform mobile e-commerce application built with Flutter and powered by a comprehensive Firebase serverless architecture. The application provides a modern shopping experience through secure authentication, real-time product browsing, wishlist management, shopping cart functionality, image-based search, order history tracking, and cloud synchronization. Aurora was designed using a hybrid state management architecture combining Provider, BLoC, Cubit, and GetX to deliver a responsive, scalable, and production-oriented mobile application.
 
-## Getting Started
+2)features
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+* Secure user authentication using Firebase Authentication
+* User registration and login with email and password
+* Real-time product catalog synchronized with Firebase
+* Product categories and trending products
+* Shopping cart with quantity management and automatic price calculation
+* Wishlist (Favorites) management
+* Camera and gallery image upload functionality
+* Firebase Storage integration for image handling
+* Simulated checkout workflow
+* Order history tracking
+* In-app notification system
+* In-app email inbox for updates and promotions
+* User profile management with avatar uploads
+* Light and dark mode support
+* Cloud-synced user preferences and data
+* Responsive and modern Flutter user interface
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3) Tech Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Frontend
 
-# My Flutter App
+* Flutter
+* Dart
 
-## Features
-- Firebase integration
-- Product API (DummyJSON)
-- Image upload
+### Backend & Cloud Services
 
-## How to run
-flutter pub get
-flutter run
+* Firebase Authentication
+* Cloud Firestore
+* Firebase Storage
+* Firebase Cloud Messaging (FCM)
+* Firebase App Check
+
+### State Management
+
+* Provider
+* Flutter BLoC
+* Cubit
+* GetX
+
+### Networking
+
+* HTTP Package
+
+### Local Storage & Utilities
+
+* Shared Preferences
+* Image Picker
+* Flutter Local Notifications
+* Share Plus
+
+### APIs
+
+* DummyJSON Products API
+* Unsplash Image API
+
+
+
+
